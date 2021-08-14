@@ -1,0 +1,250 @@
+.credit_card{
+  overflow-x: hidden;  
+  padding-left: 25%;
+  padding-right: 25%;
+  width:100%;
+}
+.cards{
+position: relative;
+top: 10%;
+z-index: 1; 
+}
+
+form{
+  background-color: azure;
+  width:100%;
+  height: 80vh;
+  position: relative;
+  top: -100px;
+  padding: 40px;
+  padding-top: 20%;
+  border-radius: 20px;
+}
+.row .row_content_number input, .row_content_name input{
+width:100%;
+margin: 10px 10px 10px 0px;
+border: 1px solid skyblue;
+padding:8px;
+}
+
+.row_content_expiry{
+  padding-top: 10px;
+}
+.row_content_cvv{
+  position:relative;
+  left: 80%;
+  top: -12px;
+}
+.set_three {
+  display: flex;
+}
+.expiry select{
+  padding:0px 8px 8px 0px;
+  width: 200px;
+  text-align: center;
+  border:1px solid skyblue;
+}
+
+.cvc input{
+  width: 100px;
+  margin: 10px;
+  padding:4px;
+  position: relative;
+  left: 10%;
+  top:-10px; 
+  border:1px solid skyblue;
+}
+
+
+/* Card_frame */
+
+
+.Card_pic{
+  position: relative;
+}
+
+.Card_frame .frame{
+  width:290px;
+  border-radius: 20px;
+  margin-left: 26%;
+}
+
+.Card_frame .chip{
+  width: 38px;
+  position: relative;
+  top:-60px;
+  right: 45%;
+}
+.Card_frame .visa{
+  position: absolute;
+  top: 12%;
+  right: 38%;
+  z-index: 1;
+}
+.Card_frame .visa .discover{
+  width: 70px;
+  position: relative;
+  top:-20px;
+  right: -45%;
+  transition: ease-in-out;
+  animation: discover 20s linear infinite;
+}
+.Card_frame  .visa .mastercard{
+  width: 50px;
+  position: relative;
+  top:-14px;
+  right: -100%;
+  opacity: 0;
+  transition:ease-in-out;
+  animation: mastercard 20s linear infinite;
+}
+
+/* .Card_frame .visa .Visa_front{
+  width: 46px;
+  position: relative;
+  top:-14px;
+  right: -65%;
+  transition: ease-in-out;
+} */
+@keyframes mastercard{
+  0%{transform: rotateX(360deg);opacity: 1;
+    animation-delay: 1s;
+    animation-timing-function:step-end;}
+  50%{transform: rotateX(360deg);opacity: 0;
+ }
+  100%{transform: rotateX(360deg);opacity: 0;}
+}
+@keyframes discover{
+  0%{transform: rotateX(360deg);opacity: 0;}
+  50%{transform: rotateX(360deg);opacity: .01;
+  animation-delay: 10s;}
+  100%{transform: rotateX(360deg);opacity: 1;
+        animation-delay: 1s;
+      animation-timing-function: step-start;}
+}
+
+.Card_details .account_number{
+   position: relative;
+   top:-100px;
+   left: 182px;
+   width: 40%;
+   min-height: 25px;
+   border: none;
+   background-color: transparent;
+   color:white;
+   text-align:center;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+   .Card_details .account_number:hover{
+    border:1.5px solid white;
+   }
+
+   .name_label{
+     color: white;
+    position: relative;
+    top:-60px;
+    right:75px;
+    padding-left: 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 15px;
+   }
+   .Card_details .account_name{
+     font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    padding: 2px;
+    top:-40px;
+    text-decoration-color:black;
+    min-height: 25px;
+    right: 150px;
+    width: 25%;
+    font-size: 12px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    border:none;
+   }
+
+   .Card_details .account_name:hover{
+     border: 1.5px solid white;
+   }
+   .name_expires{
+     position: relative;
+     top:-60px;
+     color: white;
+     padding: 2px;
+     right:101px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-weight: 500;
+     font-size: 15px;
+   }
+   .Card_details .account_expiry{
+    position: relative;
+    top:-38px;
+    right: 26%;
+    width: 10%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    background-color: transparent;
+    color: white;
+    min-height: 25px;
+    text-align:center;
+    border:none;
+  }
+
+  .Card_details .account_expiry:hover{
+    border: 1.5px solid white;
+  }
+/* back_cover_card */
+  .Back_cover_card .card_back img{
+  width:290px;
+  border-radius: 20px;
+  margin-left: 26%;
+}
+
+.Back_cover_card .visa_b{
+position: relative;
+}
+.Back_cover_card .visa_b .back_visa{
+  position: absolute;
+  top: -115px;
+  right: 28%;
+  width: 50px;
+}
+
+.Back_cover_card .input_field .back_label{
+  position: relative;
+  top:-160px;
+  left: 66%;
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Back_cover_card .input_field .back_input{
+  position: relative;
+  top: -125px;
+  left:23.5%;
+  width: 43%;
+  padding: 4px;
+  background-color: white;
+  text-align-last: right;
+  border: none;
+  min-height: 10%;
+}
+
+.Back_cover_card {
+  z-index: 1;
+  
+}
+.Back_cover_card .black_row{
+position: relative;
+top:-160px;
+left:26%;
+width: 47.8%;
+min-height: 35px;
+outline: none;
+border: none;
+background-color: black;
+}
